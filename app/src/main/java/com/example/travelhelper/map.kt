@@ -21,7 +21,6 @@ import com.yandex.mapkit.map.CameraPosition
 import com.yandex.mapkit.map.CameraUpdateReason
 import com.yandex.mapkit.map.IconStyle
 import com.yandex.mapkit.map.Map
-import com.yandex.mapkit.map.MapObjectCollection
 import com.yandex.mapkit.map.RotationType
 import com.yandex.mapkit.map.VisibleRegionUtils
 import com.yandex.mapkit.mapview.MapView
@@ -77,7 +76,7 @@ class map : AppCompatActivity(), UserLocationObjectListener, Session.SearchListe
         locationmapkit = mapkit.createUserLocationLayer(mapview.mapWindow)
         locationmapkit.isVisible = true
         locationmapkit.setObjectListener(this)
-//        SearchFactory.initialize(this)
+        SearchFactory.getInstance()
         searchManager = SearchFactory.getInstance().createSearchManager(SearchManagerType.COMBINED)
         mapview.map.addCameraListener(this)
         searchEdit = findViewById(R.id.searh_edit)
