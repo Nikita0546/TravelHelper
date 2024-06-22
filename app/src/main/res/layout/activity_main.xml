@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#201E28"
+    android:background="#E0FFFF"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#Fdfdfd"
+        android:textColor="#4169E1"
         android:layout_gravity="center"
         android:layout_marginTop="170dp"
         android:textSize="25sp"
@@ -27,7 +27,6 @@
         android:textColorHint="#6a6a6a"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:textColor="#fdfdfd"
         android:hint="Введите логин" />
 
     <EditText
@@ -39,7 +38,6 @@
         android:textColorHint="#6a6a6a"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:textColor="#fdfdfd"
         android:hint="Введите email" />
 
     <EditText
@@ -51,7 +49,6 @@
         android:textColorHint="#6a6a6a"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:textColor="#fdfdfd"
         android:hint="Введите пароль" />
 
     <Button
@@ -61,9 +58,9 @@
         android:text="Регистрация"
         android:textStyle="bold"
         android:textSize="16dp"
-        android:textColor="#5e4602"
+        android:textColor="#fff"
         android:layout_gravity="center"
-        android:backgroundTint="#e2a600"
+        android:backgroundTint="#00BFFF"
         android:layout_marginTop="30dp"/>
 
     <TextView
@@ -73,7 +70,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:text="Авторизоваться"
-        android:textColor="#Fdfdfd"
+        android:textColor="#4169E1"
         android:textSize="17sp"
         android:textStyle="bold" />
 

@@ -77,7 +77,7 @@ class map : AppCompatActivity(), UserLocationObjectListener, Session.SearchListe
         locationmapkit = mapkit.createUserLocationLayer(mapview.mapWindow)
         locationmapkit.isVisible = true
         locationmapkit.setObjectListener(this)
-        SearchFactory.initialize(this)
+//        SearchFactory.initialize(this)
         searchManager = SearchFactory.getInstance().createSearchManager(SearchManagerType.COMBINED)
         mapview.map.addCameraListener(this)
         searchEdit = findViewById(R.id.searh_edit)
@@ -131,14 +131,7 @@ class map : AppCompatActivity(), UserLocationObjectListener, Session.SearchListe
     }
 
     override fun onSearchResponse(response: Response) {
-        val mapObjects:MapObjectCollection = mapview.map.mapObjects
-        mapObjects.clear()
-        for(searchResult in response.collection.children){
-            val resultLocation = searchResult.obj!!.geometry[0].point!!
-            if (response!=null){
-                mapObjects.addPlacemark(resultLocation, ImageProvider.fromResource(this, R.drawable.search_result))
-            }
-        }
+
     }
 
 
