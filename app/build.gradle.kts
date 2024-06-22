@@ -1,6 +1,10 @@
+import org.jetbrains.kotlin.ir.backend.js.compile
+
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+//    alias(libs.plugins.android.application)
+//    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
@@ -9,13 +13,14 @@ android {
 
     defaultConfig {
         applicationId = "com.example.travelhelper"
-        minSdk = 31
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
@@ -36,12 +41,13 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.checkout)
+    implementation(libs.maps.mobile)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -21,9 +21,8 @@ class Home : AppCompatActivity() {
     fun Kliknot(view: View) {
         val engIntent = Intent(this, notes::class.java)
         startActivity(engIntent)
-//    }
-//    fun klikemp(view: View) {
-//        val engIntent = Intent(this, ItemsEmploye::class.java)
-//        startActivity(engIntent) }
     }
+    fun klikmap(view: View) {
+        val engIntent = Intent(this, map::class.java)
+        startActivity(engIntent) }
 }
